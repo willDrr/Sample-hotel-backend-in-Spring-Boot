@@ -1,1 +1,1 @@
-insert into hotel (name, location) values("Hotelix", "San Jose");
+insert into hotel (name, location) values ('Hotelix', 'San Jose');
