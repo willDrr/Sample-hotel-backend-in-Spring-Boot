@@ -14,7 +14,7 @@ public class HotelApplication implements CommandLineRunner{
 	private static final Logger logger = LoggerFactory.getLogger(HotelApplication.class);
 	
 	@Autowired
-	HotelRepository hotelRepository;
+	private HotelRepository hotelRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(HotelApplication.class, args);
