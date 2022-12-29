@@ -21,7 +21,7 @@ public class Hotel {
 	private String location;
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "hotel", orphanRemoval = true)
-	private Set<Room> books = new HashSet<>();
+	private Set<Room> rooms = new HashSet<>();
 
 	public Hotel() {
 
@@ -32,10 +32,6 @@ public class Hotel {
 		this.location = location;
 	}
 
-	public void addRoom(Room room) {
-		
-	}
-	
 	public String getName() {
 		return name;
 	}
@@ -52,11 +48,11 @@ public class Hotel {
 		this.location = location;
 	}
 
-	public Set<Room> getBooks() {
-		return books;
+	public Set<Room> getRooms() {
+		return rooms;
 	}
 
-	public void setBooks(Set<Room> books) {
-		this.books = books;
+	public void setRooms(Set<Room> rooms) {
+		this.rooms = rooms;
 	}
 }
